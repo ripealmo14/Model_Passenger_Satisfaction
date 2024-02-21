@@ -19,9 +19,9 @@ warnings.filterwarnings("ignore")
 
 
 def eval_model(file_x_test, file_y_test):
-    y_test = pd.read_csv(os.path.join('../data/processed', file_y_test))
+    y_test = pd.read_csv(os.path.join('../data/processed/', file_y_test))
     print(file_y_test, ' cargado correctamente')
-    X_test = pd.read_csv(os.path.join('../data/processed', file_x_test))
+    X_test = pd.read_csv(os.path.join('../data/processed/', file_x_test))
     print(file_x_test, ' cargado correctamente')
     features=X_test.columns.tolist()
     # Leemos el modelo entrenado para usarlo

@@ -9,7 +9,7 @@ warnings.filterwarnings("ignore")
 
 # Cargar la tabla transformada
 def score_model(filename, scores):
-    df = pd.read_csv(os.path.join('../data/processed', filename))
+    df = pd.read_csv(os.path.join('../data/processed/', filename))
     print(filename, ' cargado correctamente')
     # Leemos el modelo entrenado para usarlo
     package = '../models/best_model.pkl'
