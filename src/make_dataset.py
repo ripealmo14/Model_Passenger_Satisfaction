@@ -71,7 +71,7 @@ def data_preparation(df, type_df):
 
 
 def data_exporting(df, filename):
-    """Data escport
+    """Data export
     """
     df.to_csv(os.path.join('../data/processed/', filename), index=False)
     print(filename, 'exportado correctamente en la carpeta processed')
