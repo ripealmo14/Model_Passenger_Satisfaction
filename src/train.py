@@ -13,8 +13,6 @@ from sklearn.neural_network import MLPClassifier
 warnings.filterwarnings("ignore")
 
 
-
-
 def train_model(filename):
     """Train model
     """
@@ -24,7 +22,7 @@ def train_model(filename):
 
     # Split Data
     X_train, X_test, y_train, y_test = train_test_split(X, y,
-                                                    train_size = 3600, test_size = 400,
+                                                    train_size = 36000, test_size = 4000,
                                                     stratify = y, random_state = 2023)
 
     data_exporting(y_test, "target_validate.csv")
